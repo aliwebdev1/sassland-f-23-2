@@ -4,27 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sass Land</title>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="style/style.css">
+    <title>Sass Land</title>
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
             </div>
             <nav>
                 <ul>
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#">Contact us</a></li>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="#blog-one">Blog One</a></li>
                     <li> <a href="#">Privecy</a></li>
                     <li> <a href="#">Blog</a></li>
-                    <li> <a href="#">Tutorial</a></li>
+                    <li> <a href="#footer">Footer</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
 
     <!-- banner section -->
     <section>
@@ -37,7 +49,8 @@
     <!-- main sectin start -->
     <main class="container">
         <div class="blog-items">
-            <div class="single-item">
+
+            <div id="blog-one" class="single-item">
                 <div class="single-text">
                     <div class="text">
                         <img src="images/1.png" alt="">
@@ -51,6 +64,7 @@
                     <img src="images/process_1.png" alt="">
                 </div>
             </div>
+
             <!-- items two -->
             <div class="single-item">
                 <div class="single-photo">
@@ -75,6 +89,7 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi molestias similique commodi
                             recusandae fugiat nam iste cum, error quasi autem nemo harum dolorem! Veritatis magnam
                             perferendis consequatur officiis cum non.</p>
+                        <button class="btn-primary">Show more</button>
                     </div>
                 </div>
                 <div class="single-photo">
@@ -102,7 +117,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="footer-item-parent">
                 <div class="footer-item">
@@ -145,8 +160,14 @@
     </footer>
 
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
 
 
+
+    <script src="js/app.js"></script>
+    <script src="https://kit.fontawesome.com/f14b8fb24f.js" crossorigin="anonymous"></script>
 
 </body>
 
